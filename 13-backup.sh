@@ -27,9 +27,11 @@ VALIDATE(){
 
 USAGE(){
     echo -e "$R USAGE:: $N sh 13-backup.sh <SOURCE_DIR> <DEST_DIR> <DAYS(Optional)>"
+    exit 1
 }
 
 mkdir -p /home/ec2-user/shellscript-logs/
+
 if [ $# -lt 2 ]
 then
     USAGE
